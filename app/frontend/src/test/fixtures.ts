@@ -1,0 +1,90 @@
+import type { RunEvent, Source } from "@/api/types";
+
+export const source = (n: number, extra: Partial<Source> = {}): Source => ({
+  n,
+  title: `Source ${n}`,
+  url: `https://example${n}.org/page`,
+  domain: `example${n}.org`,
+  snippet: `Snippet ${n}`,
+  scraped: true,
+  query: "q1",
+  ...extra,
+});
+
+const usage = { used: 1, cap: 20 };
+
+/** A full job with one revision round, as the server streams it. */
+export function revisedRun(): RunEvent[] {
+  return [
+    {
+      seq: 1,
+      t: 0,
+      type: "start",
+      run_id: "abc123",
+      question: "What is SLE?",
+      model: "gemini-test",
+      started_at: 1_700_000_000,
+      max_iterations: 3,
+      pass_score: 8,
+      max_tokens: 400_000,
+      usage,
+    },
+    { seq: 2, t: 2, type: "node", node: "planner", summary: "planned 2 sub-queries", tokens: 100, source_count: 0, sub_queries: ["q1", "q2"], usage },
+    {
+      seq: 3,
+      t: 9,
+      type: "node",
+      node: "searcher",
+      summary: "collected 2 new sources",
+      tokens: 100,
+      source_count: 2,
+      round: 1,
+      queries: ["q1", "q2"],
+      sources: [source(1), source(2, { scraped: false, query: "q2" })],
+    },
+    { seq: 4, t: 20, type: "node", node: "synthesizer", summary: "wrote a draft", tokens: 900, source_count: 2, draft_number: 1, words: 400, draft: "# R\n\nClaim [1]." },
+    {
+      seq: 5,
+      t: 26,
+      type: "node",
+      node: "reflector",
+      summary: "review 1",
+      tokens: 1200,
+      source_count: 2,
+      critique: { score: 6, passed: false, missing: ["gap"], follow_up_queries: ["q3"] },
+      iteration: 1,
+      next: "searcher",
+      reason: "retry",
+    },
+    { seq: 6, t: 31, type: "node", node: "searcher", summary: "collected 1 new source", tokens: 1200, source_count: 3, round: 2, queries: ["q3"], sources: [source(3, { query: "q3" })] },
+    { seq: 7, t: 44, type: "node", node: "synthesizer", summary: "wrote a draft", tokens: 2200, source_count: 3, draft_number: 2, words: 520, draft: "# R\n\nClaim [1][3]." },
+    {
+      seq: 8,
+      t: 50,
+      type: "node",
+      node: "reflector",
+      summary: "review 2",
+      tokens: 2500,
+      source_count: 3,
+      critique: { score: 9, passed: true, missing: [], follow_up_queries: [] },
+      iteration: 2,
+      next: "finalizer",
+      reason: "passed",
+    },
+    { seq: 9, t: 51, type: "node", node: "finalizer", summary: "saved", tokens: 2500, source_count: 3, name: "r-2026-10-22" },
+    {
+      seq: 10,
+      t: 51,
+      type: "done",
+      name: "r-2026-10-22",
+      title: "R",
+      markdown: "# Research Report: R\n\nClaim [1][3].",
+      seconds: 51,
+      tokens: 2500,
+      iterations: 2,
+      final_score: 9,
+      first_draft: "r-2026-10-22-draft1",
+      usage,
+    },
+  ];
+}

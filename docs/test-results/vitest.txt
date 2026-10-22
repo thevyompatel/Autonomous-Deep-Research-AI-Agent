@@ -1,0 +1,29 @@
+
+added 520 packages in 1m
+
+ RUN  v2.1.9 C:/Users/thevy/Desktop/Autonomous-Deep-Research-AI-Agent-main/Autonomous-Deep-Research-AI-Agent-main/app/frontend
+
+ ✓ src/lib/diff.test.ts (4 tests) 7ms
+ ✓ src/lib/stepper.test.ts (8 tests) 10ms
+ ✓ src/lib/citations.test.ts (9 tests) 13ms
+ ✓ src/lib/runReducer.test.ts (11 tests) 19ms
+stderr | src/api/stream.test.ts > parseEvent > ignores unknown event types instead of throwing
+Ignored a malformed "node" event [
+  {
+    code: 'invalid_union_discriminator',
+    options: [ 'planner', 'searcher', 'synthesizer', 'reflector', 'finalizer' ],
+    path: [ 'node' ],
+    message: "Invalid discriminator value. Expected 'planner' | 'searcher' | 'synthesizer' | 'reflector' | 'finalizer'"
+  }
+]
+
+ ✓ src/api/stream.test.ts (6 tests) 24ms
+ ✓ src/components/components.test.tsx (6 tests) 220ms
+
+ Test Files  6 passed (6)
+      Tests  44 passed (44)
+   Start at  18:54:56
+   Duration  61.41s (transform 1.05s, setup 42.48s, collect 14.78s, tests 293ms, environment 132.21s, prepare 104.95s)
+
+
+[exited with code 0]

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Autonomous Deep Research AI Agent: one question in, a cited report out." />
+    <title>Deep Research</title>
+    <link
+      rel="icon"
+      id="favicon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ccircle cx='14' cy='14' r='6.5' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M19 19l6 6' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <script>
+      // Apply the saved theme before first paint so there is no flash of the wrong one.
+      (function () {
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          var saved = localStorage.getItem("theme");
+          if (saved === "dark") dark = true;
+          else if (saved === "light") dark = false;
+        } catch (e) {}
+        if (dark) document.documentElement.classList.add("dark");
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>Deep Research needs JavaScript to run.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+{
+  "question": "How does retrieval-augmented generation work, and what are its main failure modes?",
+  "model": "gemini-3.5-flash-lite",
+  "created": "2026-10-22T18:59:22",
+  "seconds": 306.4,
+  "tokens": 43270,
+  "iterations": 2,
+  "final_score": 9,
+  "passed": true,
+  "sources": [
+    {
+      "n": 1,
+      "title": "What Is RAG Architecture: How It Works & Key Benefits",
+      "url": "https://www.truefoundry.com/blog/rag-architecture",
+      "domain": "truefoundry.com",
+      "snippet": "Retrieval augmented generation (RAG) is an architectural approach that improves an artificial intelligence (AI) model's performance by linking it to external knowledge bases like internal organizational data, journals, and specialized datasets.\n\nRAG architecture enables Large Language Models (LLMs) ",
+      "scraped": true,
+      "query": "retrieval augmented generation architecture working mechanism explained"
+    },
+    {
+      "n": 2,
+      "title": "RAG Architecture Explained: A Comprehensive Guide [2026]",
+      "url": "https://orq.ai/blog/rag-architecture",
+      "domain": "orq.ai",
+      "snippet": "This is where Retrieval Augmented Generation (RAG) comes in. Instead of relying only on pre-trained knowledge, a RAG system pulls in external data sources on demand, blending them with the model's generative capabilities to produce more relevant, factual, and personalized outputs. [...] At its core,",
+      "scraped": true,
+      "query": "retrieval augmented generation architecture working mechanism explained"
+    },
+    {
+      "n": 3,
+      "title": "What is RAG (Retrieval Augmented Generation)? | IBM",
+      "url": "https://www.ibm.com/think/topics/retrieval-augmented-generation",
+      "domain": "ibm.com",
+      "snippet": "Retrieval augmented generation, or RAG, is an architecture for optimizing the performance of an artificial intelligence (AI) model by connecting it with external knowledge bases. RAG helps large language models (LLMs) deliver more relevant responses at a higher quality. [...] 1. The user submits a p",
+      "scraped": true,
+      "query": "retrieval augmented generation architecture working mechanism explained"
+    },
+    {
+      "n": 4,
+      "title": "A Systematic Taxonomy of Failure Modes in Retrieval-Augmented Generation Systems - ACL Anthology",
+      "url": "https://aclanthology.org/2026.trustnlp-main.27",
+      "domain": "aclanthology.org",
+      "snippet": "Retrieval-Augmented Generation (RAG) systems fail in diverse, poorly characterized ways that single-stage evaluation metrics cannot detect. We present a systematic taxonomy of 33 failure modes across 7 pipeline stages — ingestion, representation, retrieval, generation, evaluation, deployment, and ag",
+      "scraped": false,
+      "query": "main failure modes of retrieval augmented generation systems"
+    },
+    {
+      "n": 5,
+      "title": "Understanding Failures and Mitigation Strategies in RAG Pipelines | Deconvolute Labs",
+      "url": "https://deconvoluteai.com/blog/rag/failure-modes",
+      "domain": "deconvoluteai.com",
+      "snippet": "This post explores the potential failure modes within Retrieval-Augmented Generation (RAG) pipelines, spanning from data ingestion to final response synthesis. It examines specific challenges such as poor data quality, suboptimal embedding choices, and the risks of retrieving irrelevant or distracto",
+      "scraped": true,
+      "query": "main failure modes of retrieval augmented generation systems"
+    },
+    {
+      "n": 6,
+      "title": "Seven RAG Pitfalls and How to Solve Them | Label Studio",
+      "url": "https://labelstud.io/blog/seven-ways-your-rag-system-could-be-failing-and-how-to-fix-them",
+      "domain": "labelstud.io",
+      "snippet": "A recent study by Barnett et al. (2024), Seven Failure Points When Engineering a Retrieval-Augmented Generation System, highlights seven common failure points in RAG implementations. Many of these failures stem from issues in retrieval accuracy, ranking, and content consolidation—reinforcing the nee",
+      "scraped": true,
+      "query": "main failure modes of retrieval augmented generation systems"
+    },
+    {
+      "n": 7,
+      "title": "RAG Scaling Challenges | Bottlenecks & Limitations",
+      "url": "https://apxml.com/courses/large-scale-distributed-rag/chapter-1-scalable-rag-architectures-foundations/scaling-rag-bottlenecks-limitations",
+      "domain": "apxml.com",
+      "snippet": "The layer that coordinates the retrieval and generation steps can also be a source of inefficiency:\n\nThe following diagram illustrates common points where bottlenecks can arise in a RAG system as it scales.\n\nA typical RAG pipeline highlighting common areas susceptible to bottlenecks as system scale ",
+      "scraped": false,
+      "query": "common RAG bottlenecks and limitations in NLP"
+    },
+    {
+      "n": 8,
+      "title": "Common Challenges in RAG and How to Solve Them in Production | Unstructured",
+      "url": "https://unstructured.io/insights/rag-pipeline-challenges-from-data-ingestion-to-retrieval",
+      "domain": "unstructured.io",
+      "snippet": "## What to do next\n\nCommon RAG challenges show up in a consistent order: weak ingestion and parsing produces weak chunks, weak chunks produce weak retrieval, and weak retrieval produces weak answers. This means the fastest path to improving rag limitations is to start at the first step in the pipeli",
+      "scraped": true,
+      "query": "common RAG bottlenecks and limitations in NLP"
+    },
+    {
+      "n": 9,
+      "title": "90% of RAG systems struggle with the same bottleneck: | Paul Iusztin",
+      "url": "https://www.linkedin.com/posts/pauliusztin_90-of-rag-systems-struggle-with-the-same-activity-7330163090082172928-c3_B",
+      "domain": "linkedin.com",
+      "snippet": "knowledge and terminology. Produces consistent tone and response style. Fast responses since knowledge is built into the model. ❌ Cons: Expensive and time-consuming to train. Hard to update with new data. May overfit or become outdated quickly. 🧩 In Short: Use RAG: For knowledge retrieval and up-to-",
+      "scraped": false,
+      "query": "common RAG bottlenecks and limitations in NLP"
+    },
+    {
+      "n": 10,
+      "title": "RAG in 2026: How Retrieval-Augmented Generation Works for Enterprise AI",
+      "url": "https://www.techment.com/blogs/rag-in-2026",
+      "domain": "techment.com",
+      "snippet": "RAG in 2026 combine retrieval systems with generative AI to deliver accurate, up-to-date, and source-grounded answers.\n Enterprises increasingly adopt RAG in 2026 to improve factual reliability, leverage proprietary data, and reduce hallucinations.\n RAG in 2026 is more scalable and cost-efficient th",
+      "scraped": false,
+      "query": "how to improve retrieval augmented generation performance 2026"
+    },
+    {
+      "n": 11,
+      "title": "RAG in 2026: Architecture Shifts, Emerging Patterns, and What It Means for Java Developers | by soufiane ELAMMARI | Medium",
+      "url": "https://medium.com/@elammarisoufiane/rag-in-2026-architecture-shifts-emerging-patterns-and-what-it-means-for-java-developers-6f2803e39787",
+      "domain": "medium.com",
+      "snippet": "RAG in 2026 is no longer a single pattern , it’s a family of patterns, and the right architecture depends entirely on your specific retrieval challenges. The shift toward modular, composable pipelines means you can incrementally adopt improvements: add a reranker today, add corrective grading next q",
+      "scraped": false,
+      "query": "how to improve retrieval augmented generation performance 2026"
+    },
+    {
+      "n": 12,
+      "title": "Improving RAG accuracy: 10 techniques that actually work",
+      "url": "https://redis.io/blog/10-techniques-to-improve-rag-accuracy",
+      "domain": "redis.io",
+      "snippet": "Retrieval augmented generation (RAG) improves AI accuracy by grounding LLM outputs in verified, domain-specific context rather than relying on static training data alone.\n Start simple: baseline a naive RAG pipeline, then measure and iterate with clear metrics.\n Strengthen retrieval: use hybrid sear",
+      "scraped": true,
+      "query": "how to improve retrieval augmented generation performance 2026"
+    },
+    {
+      "n": 13,
+      "title": "RAG Evaluation | DeepEval - The LLM Evaluation Framework",
+      "url": "https://deepeval.com/guides/guides-rag-evaluation",
+      "domain": "deepeval.com",
+      "snippet": "RAG evaluation is the process of measuring how well a Retrieval-Augmented Generation pipeline performs—both the retriever (does it pull the right context?) and the generator (does it produce a faithful, relevant answer using that context?). DeepEval evaluates these layers separately so you can debug",
+      "scraped": true,
+      "query": "evaluation metrics for retrieval augmented generation pipelines"
+    },
+    {
+      "n": 14,
+      "title": "RAG Evaluation Metrics: Best Practices for Evaluating RAG Systems",
+      "url": "https://www.patronus.ai/llm-testing/rag-evaluation-metrics",
+      "domain": "patronus.ai",
+      "snippet": "Retrieval augmented generation is an architectural pattern that enables internal organizational data to be fed into LLMs. It helps LLMs prioritize the organization's own data and use it as context rather than relying on its own trained data. It separates an LLM's natural language understanding abili",
+      "scraped": true,
+      "query": "evaluation metrics for retrieval augmented generation pipelines"
+    },
+    {
+      "n": 15,
+      "title": "Evaluation of Retrieval-Augmented Generation: A Survey",
+      "url": "https://arxiv.org/html/2405.07437v2",
+      "domain": "arxiv.org",
+      "snippet": "aim to provide a comprehensive overview of the evaluation and benchmarks of RAG systems. Specifically, we examine and compare several quantifiable metrics of the Retrieval and Generation components, such as relevance, accuracy, and faithfulness, within the current RAG benchmarks, encompassing the po",
+      "scraped": true,
+      "query": "evaluation metrics for retrieval augmented generation pipelines"
+    },
+    {
+      "n": 16,
+      "title": "10 Ways to Improve the Performance of Retrieval Augmented Generation Systems | Towards Data Science",
+      "url": "https://towardsdatascience.com/10-ways-to-improve-the-performance-of-retrieval-augmented-generation-systems-5fa2cee7cd5c",
+      "domain": "towardsdatascience.com",
+      "snippet": "You can fine-tune you embedding model to resolve this issue. Doing so can boost your retrieval metrics by 5–10%. This requires a bit more effort, but can make a significant difference in your retrieval performance. The process is easier than you might think, as LlamaIndex can help you generate a tra",
+      "scraped": false,
+      "query": "how to improve retrieval augmented generation performance 2026"
+    },
+    {
+      "n": 17,
+      "title": "Top 10 Techniques to Improve RAG Applications — Agenta Blog",
+      "url": "https://agenta.ai/blog/top-10-techniques-to-improve-rag-applications",
+      "domain": "agenta.ai",
+      "snippet": "Fine-tuning involves taking a pre-trained embedding model and further training it on domain-specific data to better align it with the unique vocabulary, semantics, and structure of a given field. This process offers several key benefits for improving Retrieval-Augmented Generation (RAG) systems. Fir",
+      "scraped": true,
+      "query": "how to improve retrieval augmented generation performance 2026"
+    },
+    {
+      "n": 18,
+      "title": "RAG Evaluation Metrics: Assessing Answer Relevancy, Faithfulness, Contextual Relevancy, And More - Confident AI",
+      "url": "https://www.confident-ai.com/blog/rag-evaluation-metrics-answer-relevancy-faithfulness-and-more",
+      "domain": "confident-ai.com",
+      "snippet": "RAG Evaluation Metrics: Assessing Answer Relevancy, Faithfulness, Contextual Relevancy, And More\n\nBuilding a Retrieval-Augmented Generation (RAG) pipeline isn’t the mission impossible — knowing if it’s actually working is. You might fine-tune prompts, tweak retrievers, and switch models, but if your",
+      "scraped": true,
+      "query": "evaluation metrics for retrieval augmented generation pipelines"
+    },
+    {
+      "n": 19,
+      "title": "RAG Evaluation: Don’t let customers tell you first | Pinecone",
+      "url": "https://www.pinecone.io/learn/series/vector-databases-in-production-for-busy-engineers/rag-evaluation",
+      "domain": "pinecone.io",
+      "snippet": "RAG relevance \n\nYour RAG pipeline is only as performant as your retrieval phase is accurate.\n\n## RAG evaluation measures your pipeline’s performance\n\nTo evaluate the performance of Retrieval-Augmented Generation systems, we must understand how well the retrieval component selects and ranks relevant ",
+      "scraped": true,
+      "query": "evaluation metrics for retrieval augmented generation pipelines"
+    },
+    {
+      "n": 20,
+      "title": "RAG Accuracy Problems: Why They Happen and How to Fix Them",
+      "url": "https://atlan.com/know/rag-accuracy-problems",
+      "domain": "atlan.com",
+      "snippet": "### What are the limitations of RAG in LLMs?\n\n  \n\nRAG reduces hallucinations by 71% on average but does not eliminate them. Its limitations include: retrieval failures when knowledge bases are stale or undescribed; positional bias causing the LLM reasoning model to deprioritize information in the mi",
+      "scraped": true,
+      "query": "common RAG bottlenecks and limitations in NLP"
+    },
+    {
+      "n": 21,
+      "title": "RAG: Fundamentals, Challenges, and Advanced Techniques | Label Studio",
+      "url": "https://labelstud.io/blog/rag-fundamentals-challenges-and-advanced-techniques",
+      "domain": "labelstud.io",
+      "snippet": "While RAG improves LLM reliability, real-world applications often expose its limitations. Retrieval can still return irrelevant, incomplete, or even incorrect information. Additionally, issues like chunking errors, poor embedding quality, and missing context can impact response accuracy. To build a ",
+      "scraped": true,
+      "query": "common RAG bottlenecks and limitations in NLP"
+    }
+  ]
+}
